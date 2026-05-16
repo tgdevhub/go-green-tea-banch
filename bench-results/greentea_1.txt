@@ -1,0 +1,46 @@
+goos: darwin
+goarch: arm64
+pkg: testGC
+cpu: Apple M3 Pro
+BenchmarkSmallAllocs-12             	 2776020	      1272 ns/op	    2400 B/op	     100 allocs/op
+BenchmarkSmallAllocs-12             	 2807695	      1276 ns/op	    2400 B/op	     100 allocs/op
+BenchmarkSmallAllocs-12             	 2822328	      1275 ns/op	    2400 B/op	     100 allocs/op
+BenchmarkSmallAllocs-12             	 2841855	      1268 ns/op	    2400 B/op	     100 allocs/op
+BenchmarkSmallAllocs-12             	 2771826	      1294 ns/op	    2400 B/op	     100 allocs/op
+BenchmarkMixedSizeAllocs-12         	1000000000	         0.2501 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMixedSizeAllocs-12         	1000000000	         0.2552 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMixedSizeAllocs-12         	1000000000	         0.2481 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMixedSizeAllocs-12         	1000000000	         0.2653 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMixedSizeAllocs-12         	1000000000	         0.2551 ns/op	       0 B/op	       0 allocs/op
+BenchmarkHTTPRequestLike-12         	65227189	        56.99 ns/op	       7 B/op	       0 allocs/op
+BenchmarkHTTPRequestLike-12         	62973348	        57.60 ns/op	       7 B/op	       0 allocs/op
+BenchmarkHTTPRequestLike-12         	60009001	        57.84 ns/op	       7 B/op	       0 allocs/op
+BenchmarkHTTPRequestLike-12         	62535103	        57.09 ns/op	       7 B/op	       0 allocs/op
+BenchmarkHTTPRequestLike-12         	63457975	        56.53 ns/op	       7 B/op	       0 allocs/op
+BenchmarkConcurrentAllocs-12        	14717494	       253.6 ns/op	    1200 B/op	      50 allocs/op
+BenchmarkConcurrentAllocs-12        	13819024	       264.8 ns/op	    1200 B/op	      50 allocs/op
+BenchmarkConcurrentAllocs-12        	13059574	       274.3 ns/op	    1200 B/op	      50 allocs/op
+BenchmarkConcurrentAllocs-12        	13087434	       275.8 ns/op	    1200 B/op	      50 allocs/op
+BenchmarkConcurrentAllocs-12        	12961165	       278.2 ns/op	    1200 B/op	      50 allocs/op
+BenchmarkPointerHeavy-12            	 1684195	      2114 ns/op	    3200 B/op	     200 allocs/op
+BenchmarkPointerHeavy-12            	 1701756	      2110 ns/op	    3200 B/op	     200 allocs/op
+BenchmarkPointerHeavy-12            	 1680211	      2113 ns/op	    3200 B/op	     200 allocs/op
+BenchmarkPointerHeavy-12            	 1720359	      2100 ns/op	    3200 B/op	     200 allocs/op
+BenchmarkPointerHeavy-12            	 1725656	      2092 ns/op	    3200 B/op	     200 allocs/op
+BenchmarkStringBuilding-12          	 1781562	      2045 ns/op	   11520 B/op	      50 allocs/op
+BenchmarkStringBuilding-12          	 1786677	      2027 ns/op	   11520 B/op	      50 allocs/op
+BenchmarkStringBuilding-12          	 1797421	      2092 ns/op	   11520 B/op	      50 allocs/op
+BenchmarkStringBuilding-12          	 1826252	      1999 ns/op	   11520 B/op	      50 allocs/op
+BenchmarkStringBuilding-12          	 1713048	      1998 ns/op	   11520 B/op	      50 allocs/op
+BenchmarkLongLivedPlusGarbage-12    	 2738223	      1338 ns/op	    2400 B/op	     100 allocs/op
+BenchmarkLongLivedPlusGarbage-12    	 2766357	      1306 ns/op	    2400 B/op	     100 allocs/op
+BenchmarkLongLivedPlusGarbage-12    	 2736075	      1331 ns/op	    2400 B/op	     100 allocs/op
+BenchmarkLongLivedPlusGarbage-12    	 2681197	      1325 ns/op	    2400 B/op	     100 allocs/op
+BenchmarkLongLivedPlusGarbage-12    	 2748714	      1317 ns/op	    2400 B/op	     100 allocs/op
+BenchmarkWithGCStats-12             	  303456	     11712 ns/op	      1760 gc-cycles	     34973 ns/gc-pause	   19280 B/op	     805 allocs/op
+BenchmarkWithGCStats-12             	  307478	     11631 ns/op	      1786 gc-cycles	     35655 ns/gc-pause	   19280 B/op	     805 allocs/op
+BenchmarkWithGCStats-12             	  307885	     11694 ns/op	      1791 gc-cycles	     35087 ns/gc-pause	   19280 B/op	     805 allocs/op
+BenchmarkWithGCStats-12             	  309288	     11683 ns/op	      1805 gc-cycles	     35245 ns/gc-pause	   19280 B/op	     805 allocs/op
+BenchmarkWithGCStats-12             	  306985	     11680 ns/op	      1798 gc-cycles	     34827 ns/gc-pause	   19280 B/op	     805 allocs/op
+PASS
+ok  	testGC	164.607s

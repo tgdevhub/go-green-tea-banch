@@ -1,0 +1,16 @@
+goos: darwin
+goarch: arm64
+pkg: testGC
+cpu: Apple M3 Pro
+BenchmarkSlidingWindow-12        	277026020	        13.09 ns/op	      24 B/op	       1 allocs/op
+BenchmarkSlidingWindow-12        	277272430	        13.19 ns/op	      24 B/op	       1 allocs/op
+BenchmarkSlidingWindow-12        	276441297	        12.96 ns/op	      24 B/op	       1 allocs/op
+BenchmarkSlidingWindow-12        	277069195	        13.04 ns/op	      24 B/op	       1 allocs/op
+BenchmarkSlidingWindow-12        	277212496	        12.96 ns/op	      24 B/op	       1 allocs/op
+BenchmarkLargeHeapPressure-12    	 1230643	      2883 ns/op	   12000 B/op	     500 allocs/op
+BenchmarkLargeHeapPressure-12    	 1264342	      2781 ns/op	   12000 B/op	     500 allocs/op
+BenchmarkLargeHeapPressure-12    	 1279164	      2864 ns/op	   12000 B/op	     500 allocs/op
+BenchmarkLargeHeapPressure-12    	 1261104	      2860 ns/op	   12000 B/op	     500 allocs/op
+BenchmarkLargeHeapPressure-12    	 1258146	      2855 ns/op	   12000 B/op	     500 allocs/op
+PASS
+ok  	testGC	57.440s
